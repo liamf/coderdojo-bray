@@ -1,9 +1,15 @@
 /* 
  * Start of our menu styling: use a "div" block to contain our menu
  * Our list elements inside this div get particular styling
+ *
+ *
+ * Note the use of CSS child selectors in this stylesheet
+ * see http://www.w3.org/TR/CSS2/selector.html#child-selectors
+ *
  */
  
-#mymenu
+/* The basic style for the <div> holding the menu */
+#mymenu_a
 { 
 height:37px; 
 display:block; 
@@ -13,27 +19,27 @@ border:1px solid;
 background:#3e698c;  
 }
  
-#mymenu > ul 
+#mymenu_a > ul 
 {
 list-style:inside none; 
 padding:0; 
 margin:0;
 }
  
-#mymenu > ul > li 
+#mymenu_a > ul > li 
 {
 list-style:inside none; 
 padding:0; 
 margin:0; 
 float:left; 
-display:block; 
 position:relative;
 }
  
-#mymenu > ul > li > a
+/* The text for the links in our menu */
+#mymenu_a > ul > li > a
 { 
-outline:none; 
-display:block; 
+outline: none;  
+display: block;
 position:relative; 
 padding:12px 20px; 
 font:bold 13px/100% Arial, Helvetica, sans-serif; 
