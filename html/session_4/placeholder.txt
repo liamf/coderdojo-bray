@@ -1,0 +1,1 @@
+This session will cover using <div> and <span> for layout of a website

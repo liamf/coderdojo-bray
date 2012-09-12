@@ -1,0 +1,1 @@
+This session will either be more CSS layout, or possibly a quick introduction to very simple Javascript (colour block animation for instance)
