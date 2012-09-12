@@ -9,7 +9,7 @@
  */
  
 /* The basic style for the <div> holding the menu */
-#mymenu_f
+#mymenu
 { 
 height:37px; 
 display:block; 
@@ -20,14 +20,14 @@ background:#3e698c;
 border-radius: 10px;  
 }
  
-#mymenu_f > ul 
+#mymenu > ul 
 {
 list-style:inside none; 
 padding:0; 
 margin:0;
 }
  
-#mymenu_f > ul > li 
+#mymenu > ul > li 
 {
 list-style:inside none; 
 padding:0; 
@@ -38,7 +38,7 @@ position:relative;
 }
 
 /* The text for the links in our menu */
-#mymenu_f > ul > li > a
+#mymenu > ul > li > a
 { 
 outline: none;  
 display: block;
@@ -52,17 +52,18 @@ border-right:1px solid #1b313d;
 color: #fff;
 } 
 
-#mymenu_f > ul > li > a:hover
+#mymenu > ul > li > a:hover
 {
 background:#437593;
 } 
 
-#mymenu_f > ul > li:first-child > a
+#mymenu > ul > li:first-child > a
 {
 border-radius:10px 0 0 10px; 
 } 
 
-#mymenu_f > ul > li > a:after
+/* A vertical line after our top-level menu items */
+#mymenu > ul > li > a:after
 { 
 content:''; 
 position:absolute; 
@@ -74,25 +75,25 @@ right:-2px;
 z-index:99; 
 } 
 
-#mymenu_f ul li.submenu:hover > ul
+#mymenu ul li.submenu:hover > ul
 {
 display:block;
 } 
 
-#mymenu_f ul li > ul
+/* Make a drop-down submenu clearly visible */
+#mymenu ul li > ul
 { 
 display:none; 
 position:absolute; 
 top:38px; 
 padding:10px 0; 
-/* CHANGE: make our menu background visible, and make it a nice big width */
 background:#3f3f3f;
 width: 200px;  
 border-radius:0 0 10px 10px; 
 z-index:999; 
 } 
 
-#mymenu_f ul li > ul li
+#mymenu ul li > ul li
 {
 display:block; 
 list-style:inside none; 
@@ -101,7 +102,8 @@ margin:0;
 position:relative;
 } 
 
-#mymenu_f ul li > ul li a
+/* The font to use in the submenu */
+#mymenu ul li > ul li a
 { 
 outline:none; 
 display:block; 
@@ -113,13 +115,13 @@ color:#fff;
 text-decoration:none; 
 } 
 
-#mymenu_f, #mymenu_f > ul > li > ul > li a:hover
+#mymenu, #mymenu > ul > li > ul > li a:hover
 { 
 background:#3e698c; 
 }
 
-/* CHANGE: highlight the top level submenu in dark colour when we hover over it */
-#mymenu_f ul li.submenu:hover > a
+/* Highlight the top level submenu in dark colour when we hover over it */
+#mymenu ul li.submenu:hover > a
 { 
 background:#3f3f3f; 
 border-color:#3f3f3f; 
@@ -129,8 +131,8 @@ top:-1px;
 z-index:999; 
 } 
 
-/* Change: use a CSS "trick" to draw a downward pointing triangle on the menu */
-#mymenu_f > ul > li.submenu > a:before
+/* Use a nice CSS "trick" to draw a downward pointing triangle on the menu bar, if there is a submenu */
+#mymenu > ul > li.submenu > a:before
 { 
 content:''; 
 position:absolute; 

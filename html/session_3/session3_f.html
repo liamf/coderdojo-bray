@@ -2,37 +2,107 @@
 <html>
 	<head>
 		<title>My Cool Menu Site</title>
+		<link href="styles_a.css" rel="stylesheet" type="text/css" />
+		<link href="styles_b.css" rel="stylesheet" type="text/css" />
+		<link href="styles_c.css" rel="stylesheet" type="text/css" />
+		<link href="styles_d.css" rel="stylesheet" type="text/css" />
+		<link href="styles_e.css" rel="stylesheet" type="text/css" />
 		<link href="styles_f.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body>
 		
 		<!-- Let's put in a menu on our website -->
+		<!-- And we keep two lists here, one which we change into a menu, and one we leave alone -->
 
-		<div id='cssmenu'>
+		<h2>A basic menu</h2>
+		<div id='mymenu_a'> 
+		<ul>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='#'>Product 1</a></li>
+			<li><a href='#'>Product 2</a></li>
+			<li><a href='#'>About</a></li>
+			<li><a href='#'>Contact</a></li>
+		</ul>		
+		</div>	
+
+		<h2>Rounded menu bar, easier to read the text</h2>
+		<div id='mymenu_b'>
+		<ul>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='#'>Product 1</a></li>
+			<li><a href='#'>Product 2</a></li>
+			<li><a href='#'>About</a></li>
+			<li><a href='#'>Contact</a></li>
+		</ul>	
+		</div>
+
+		<h2>Change the colour when we hover over an item</h2>
+		<div id='mymenu_c'>
+		<ul>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='#'>Product 1</a></li>
+			<li><a href='#'>Product 2</a></li>
+			<li><a href='#'>About</a></li>
+			<li><a href='#'>Contact</a></li>
+		</ul>	
+		</div>
+		
+		<h2>Make the menu dividers fancy</h2>
+		<div id='mymenu_d'>
+		<ul>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='#'>Product 1</a></li>
+			<li><a href='#'>Product 2</a></li>
+			<li><a href='#'>About</a></li>
+			<li><a href='#'>Contact</a></li>
+		</ul>	
+		</div>
+		
+		<h2>Now add a sub-menu! (but a bit broken)</h2>
+		Hmm. Our submenu is there, but there's no way to tell ... and the colours are wrong ... 
+		<div id='mymenu_e'>
 		<ul>
 			<li><a href='index.html'>Home</a></li>
 			<li class='submenu'><a href='#'>Products</a>
-			<ul>
-			<li><a href='#'>Product 1</a></li>
-			<li><a href='#'>Product 2</a></li>
-			</ul>
+				<ul>
+					<li><a href='#'>Product 1</a></li>
+					<li><a href='#'>Product 2</a></li>
+				</ul>
+			</li>
 			<li><a href='#'>About</a></li>
 			<li><a href='#'>Contact</a></li>
-		</ul>
-		</div>		
-
+		</ul>	
+		</div>
 		
-		<h2>ToDo</h2>
+		<h2>And now a proper sub-menu</h2>
+		Adding in a proper drop-down menu, in a different colour, and an icon to tell is there's a menu
+		<div id='mymenu_f'>
 		<ul>
-			<li>top flat menu
-			<li>rounded corners
-			<li>different colours sub-menus
-			<li>borders between menu items
-			<li>submenus
-			<li>show gradient generator
-			<li>
-		</ul>
+			<li><a href='index.html'>Home</a></li>
+			<li class='submenu'><a href='#'>Products</a>
+				<ul>
+					<li><a href='#'>Product 1</a></li>
+					<li><a href='#'>Product 2</a></li>
+				</ul>
+			</li>
+			<li><a href='#'>About</a></li>
+			<li><a href='#'>Contact</a></li>
+		</ul>	
+		</div>
+		
+		
+		<ul>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='#'>Product 1</a></li>
+			<li><a href='#'>Product 2</a></li>
+			<li><a href='#'>About</a></li>
+			<li><a href='#'>Contact</a></li>
+		</ul>	
+		
+		<h2>My Cool Site</h2>
+		In here you should put some cool stuff.
+		
 		
 	</body>
 </html>

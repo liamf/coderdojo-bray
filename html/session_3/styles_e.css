@@ -33,6 +33,7 @@ list-style:inside none;
 padding:0; 
 margin:0; 
 float:left; 
+display:block; 
 position:relative;
 }
 
@@ -61,7 +62,6 @@ background:#437593;
 border-radius:10px 0 0 10px; 
 } 
 
-/* CHANGE: make a 3D-look menu divider by adding a second 1 pixel border after my menu item */
 #mymenu_e > ul > li > a:after
 { 
 content:''; 
@@ -73,3 +73,57 @@ bottom:-1px;
 right:-2px; 
 z-index:99; 
 } 
+
+/* CHANGE: A block of style for the submenu */
+
+#mymenu_e ul li.submenu:hover > ul
+{
+display:block;
+} 
+
+/* CHANGE: the UL holding the submenu */
+#mymenu_e ul li > ul
+{ 
+display:none; 
+width:auto; 
+position:absolute; 
+top:38px; 
+padding:10px 0; 
+border-radius:0 0 10px 10px; 
+z-index:999; 
+} 
+
+/* CHANGE: the menu items in the submenu */
+#mymenu_e ul li > ul li
+{
+display:block; 
+list-style:inside none; 
+padding:0; 
+margin:0; 
+position:relative;
+} 
+
+/* CHANGE: The submenu menu items and text */
+#mymenu_e ul li > ul li a
+{ 
+outline:none; 
+display:block; 
+position:relative; 
+margin:0; 
+padding:8px 20px; 
+font:10pt Arial, Helvetica, sans-serif; 
+color:#fff; 
+text-decoration:none; 
+/* text-shadow:1px 1px 0 rgba(0,0,0, 0.5); */
+} 
+
+/* CHANGE: the highlight bar for a selected item in the submenu */
+#mymenu_e, #mymenu_e > ul > li > ul > li a:hover
+{ 
+background:#3e698c; 
+}
+
+
+
+
+
