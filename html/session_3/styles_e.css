@@ -75,7 +75,6 @@ z-index:99;
 } 
 
 /* CHANGE: A block of style for the submenu */
-
 #mymenu_e ul li.submenu:hover > ul
 {
 display:block;

@@ -9,6 +9,7 @@
  */
  
 /* The basic style for the <div> holding the menu */
+
 #mymenu_a
 { 
 height:37px; 
@@ -18,14 +19,16 @@ margin:20px auto;
 border:1px solid;  
 background:#3e698c;  
 }
- 
+
+/* The > here means "a UL which is inside something with an id of "mymenu_a" */ 
 #mymenu_a > ul 
 {
 list-style:inside none; 
 padding:0; 
 margin:0;
 }
- 
+
+/* And this means an <li> which is inside a <ul> which is inside something with an id of "mymenu_a" */
 #mymenu_a > ul > li 
 {
 list-style:inside none; 
@@ -34,7 +37,8 @@ margin:0;
 float:left; 
 position:relative;
 }
- 
+
+ /* You get the idea: this means the <a> inside a <li> inside a <ul> inside mymenu_a */
 /* The text for the links in our menu */
 #mymenu_a > ul > li > a
 { 
