@@ -1,0 +1,143 @@
+/* 
+ * Start of our menu styling: use a "div" block to contain our menu
+ * Our list elements inside this div get particular styling
+ *
+ *
+ * Note the use of CSS child selectors in this stylesheet
+ * see http://www.w3.org/TR/CSS2/selector.html#child-selectors
+ *
+ */
+ 
+/* The basic style for the <div> holding the menu */
+#navigation
+{ 
+height:37px; 
+display:block; 
+padding:0; 
+margin:5px auto;  
+border:1px solid;  
+background:#3e698c;
+
+}
+ 
+#navigation > ul 
+{
+list-style:inside none; 
+padding:0; 
+margin:0;
+}
+ 
+#navigation > ul > li 
+{
+list-style:inside none; 
+padding:0; 
+margin:0; 
+float:left; 
+display:block; 
+position:relative;
+}
+
+/* The text for the links in our menu */
+#navigation > ul > li > a
+{ 
+outline: none;  
+display: block;
+position:relative; 
+padding:12px 20px; 
+font:bold 13px/100% Arial, Helvetica, sans-serif; 
+text-align:center; 
+text-decoration:none; 
+text-shadow:1px 1px 0 rgba(0,0,0, 0.4); 
+border-right:1px solid #1b313d;    
+color: #fff;
+} 
+
+#navigation > ul > li > a:hover
+{
+background:#437593;
+} 
+
+/* A vertical line after our top-level menu items */
+#navigation > ul > li > a:after
+{ 
+content:''; 
+position:absolute; 
+border-right:1px solid; 
+border-color:#6696bd;
+top:-1px; 
+bottom:-1px; 
+right:-2px; 
+z-index:99; 
+} 
+
+#navigation ul li.submenu:hover > ul
+{
+display:block;
+} 
+
+/* Make a drop-down submenu clearly visible */
+#navigation ul li > ul
+{ 
+display:none; 
+position:absolute; 
+top:38px; 
+padding:10px 0; 
+background:#3f3f3f;
+width: 200px;  
+z-index:999; 
+} 
+
+#navigation ul li > ul li
+{
+display:block; 
+list-style:inside none; 
+padding:0; 
+margin:0; 
+position:relative;
+} 
+
+/* The font to use in the submenu */
+#navigation ul li > ul li a
+{ 
+outline:none; 
+display:block; 
+position:relative; 
+margin:0; 
+padding:8px 20px; 
+font:10pt Arial, Helvetica, sans-serif; 
+color:#fff; 
+text-decoration:none; 
+} 
+
+#navigation, #navigation > ul > li > ul > li a:hover
+{ 
+background:#3e698c; 
+}
+
+/* Highlight the top level submenu in dark colour when we hover over it */
+#navigation ul li.submenu:hover > a
+{ 
+background:#3f3f3f; 
+border-color:#3f3f3f; 
+padding-bottom:13px; 
+padding-top:13px; 
+top:-1px; 
+z-index:999; 
+} 
+
+/* Use a nice CSS "trick" to draw a downward pointing triangle on the menu bar, if there is a submenu */
+#navigation > ul > li.submenu > a:before
+{ 
+content:''; 
+position:absolute; 
+top:18px; 
+right:6px; 
+border-left:5px solid transparent; 
+border-right: 5px solid transparent;
+border-top:5px solid #fff; 
+} 
+
+
+
+
+
