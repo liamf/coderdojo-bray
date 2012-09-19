@@ -1,0 +1,21 @@
+/* 
+ * Start of our main page styling
+ *
+ */
+ 
+/* 
+ * Center our contained <div> in the page
+ * Make it 96% of the page (so leave a margin left and right)
+ * Leave a margin top and bottom
+ */
+ 
+#container
+{
+	width: 96%;
+	margin: 10px auto;
+	background-color: #fff;
+	color: #333;
+}
+
+
+

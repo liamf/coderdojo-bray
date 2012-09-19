@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Basic Layout</title>
+		<link href="styles_c.css" rel="stylesheet" type="text/css" />
+		<link href="styles_menu.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+	
+	<!-- Here we use a sequence of <div> to contain our page -->	
+	<div id="container">
+	
+		<div id="header">
+			<h1>
+				My Groovy Site
+			</h1>
+		</div>
+		
+		<div id="navigation">
+			<ul>
+				<li><a href='index.html'>Home</a></li>
+				<li class='submenu'><a href='#'>Products</a>
+					<ul>
+						<li><a href='#'>Product 1</a></li>
+						<li><a href='#'>Product 2</a></li>
+					</ul>
+				</li>
+				<li><a href='#'>About</a></li>
+				<li><a href='#'>Contact</a></li>
+			</ul>
+		</div>
+		
+		<div id="content-container">
+			<div id="content">
+				<h2>
+					Page heading
+				</h2>
+				<p>
+				And some page text
+				</p>
+			</div>
+			
+			<div id="aside">
+				<h3>
+					Aside heading
+				</h3>
+				<p>
+					Some side text
+				</p>
+			</div>
+		
+			<div id="footer">
+				Copyright © Site name, 2012
+			</div>	
+		</div>
+	</div>
+		
+	</body>
+	
+</html>

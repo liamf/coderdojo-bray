@@ -1,0 +1,64 @@
+/* 
+ * Start of our main page styling
+ *
+ */
+ 
+/* 
+ * Center our container <div> in the page
+ * Make it 96% of the page (so leave a margin left and right)
+ * Leave a margin top and bottom
+ */
+ 
+#container
+{
+	width: 96%;
+	margin: 10px auto;
+	background-color: #fff;
+	color: #333;
+}
+
+/* Let's set some colours */
+
+#header
+{
+	background: #BAD6E5;
+	padding: 20px;
+	font-family: Arial, sans-serif; 
+}
+
+#footer
+{
+	background: #BAD6E5;
+    padding: 5px;
+	clear: both;
+	text-align: right;
+	height: 1%;
+
+}
+
+/* Set all the content to Arial */
+#content-container
+{
+	font-family: Arial, sans-serif; 
+}
+
+/* Layout the Left, Right and Footer content panels */
+#content
+{
+	clear: left;
+	float: left;
+	width: 70%;
+	margin: 0 0 0 2%;
+	display: inline;
+}
+
+#aside
+{
+	background: #8FB5AE;
+	float: right;
+	width: 26%;
+    padding-left: 10px;
+	display: inline;
+}
+
+
