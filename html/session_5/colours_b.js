@@ -14,23 +14,20 @@ function setOneColour(idToChange, colourToSet) {
 	e.style.backgroundColor = colourToSet;
 }
 
-// A different way of setting the colours: using variables
-
 function setColours() {
-
-	// Make an array of colours which we will use
-	var myColours = new Array();
-	myColours[0] = "#FF0000";
-	myColours[1] = "#00FF00";
-	myColours[2] = "#0000FF";
-	myColours[3] = "#FFFF00";
+	// All we do here is set the 4 divs to different colours
 	
-	// All we do here is set the 4 divs to different colours	
-	for(i=1; i<=4; i++ )
-	{
-		var div = 'box' + i;
-		setOneColour(div, myColours[i-1]);
-	}
+	// topleft, red
+	setOneColour('topleft','#FF0000');
+	
+	// topright, green
+	setOneColour('topright','#00FF00');
+	
+	// bottomleft, blue
+	setOneColour('bottomleft','#0000FF');
+	
+	// bottomright, yellow
+	setOneColour('bottomright', '#FFFF00');
 	
 }
 

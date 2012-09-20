@@ -15,30 +15,22 @@ function setOneColour(idToChange, colourToSet) {
 }
 
 // A different way of setting the colours: using variables
-// Make an array of colours which we will use
-var myColours = new Array();
-myColours[0] = "#FF0000";
-myColours[1] = "#00FF00";
-myColours[2] = "#0000FF";
-myColours[3] = "#FFFF00";
-
-var firstColour = 0;
 
 function setColours() {
+
+	// Make an array of colours which we will use
+	var myColours = new Array();
+	myColours[0] = "#FF0000";
+	myColours[1] = "#00FF00";
+	myColours[2] = "#0000FF";
+	myColours[3] = "#FFFF00";
 	
-	// All we do here is set the 4 divs to different colours
-    // The colours we set depends on the firstColour variable	
+	// All we do here is set the 4 divs to different colours	
 	for(i=1; i<=4; i++ )
 	{
 		var div = 'box' + i;
-		var colourEntry = (firstColour + i - 1) % 4;
-		setOneColour(div, myColours[colourEntry]);
+		setOneColour(div, myColours[i-1]);
 	}
 	
-	// Pick the start colour for the next time
-	firstColour = (firstColour + 1) % 4;
-	
-	// Now set a timer: when the timer expires, run this function again
-    t = setTimeout("setColours()",2000);
 }
 
