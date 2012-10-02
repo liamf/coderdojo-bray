@@ -68,6 +68,7 @@ function toggleColourChange() {
 	else
 	{
 		clearTimeout(colourTimer);
+		setColours('#333');
 	}
 }
 
@@ -82,24 +83,33 @@ function setOneColour(idToChange, colourToSet) {
 	e.style.backgroundColor = colourToSet;
 }
 
-
-function setColours() {
+// set the colours to a fixed colour, if one is passed in, or else use the list of colours as before
+function setColours(fixedColour) {
 	
-	// All we do here is set the 4 divs to different colours
-    // The colours we set depends on the firstColour variable	
-	for(i=1; i<=4; i++ )
+	// Check to see if the variable passed in is defined or not using the built-in function "typeof"
+	if( typeof fixedColour != 'undefined' )
 	{
-		var div = 'box' + i;
-		var colourEntry = (firstColour + i - 1) % 4;
-		setOneColour(div, myColours[colourEntry]);
+		for( i=1; i<=4; i++ )
+		{
+			var div = 'box' + i;
+			setOneColour(div,fixedColour);
+		}
 	}
-	
-	// Pick the start colour for the next time
-	firstColour = (firstColour + 1) % 4;
-	
-	// Now set a timer: when the timer expires, run this function again
-
-	colourTimer = setTimeout("setColours()",2000);
-
+	else
+	{
+		for(i=1; i<=4; i++ )
+		{
+			var div = 'box' + i;
+			var colourEntry = (firstColour + i - 1) % 4;
+			setOneColour(div, myColours[colourEntry]);
+		}
+		
+		// Pick the start colour for the next time
+		firstColour = (firstColour + 1) % 4;
+		
+		// Now set a timer: when the timer expires, run this function again
+		colourTimer = setTimeout("setColours()",2000);
+	}
 }
+
 

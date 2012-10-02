@@ -9,16 +9,16 @@ function generatePage() {
     leftCol.id = 'leftcolumn';
 	
 	// Add two boxes to this column
-	leftCol.appendChild(makeBox("topleft"));
-	leftCol.appendChild(makeBox("bottomleft"));
+	leftCol.appendChild(makeBox("box1"));
+	leftCol.appendChild(makeBox("box4"));
 	
 	// Make our right column
     rightCol = document.createElement('div');
     rightCol.id = 'rightcolumn';
 	
 	// Add two boxes to this column
-	rightCol.appendChild(makeBox("topright"));
-	rightCol.appendChild(makeBox("bottomright"));
+	rightCol.appendChild(makeBox("box2"));
+	rightCol.appendChild(makeBox("box3"));
 	
 	// Find the container element on the page
 	container = document.getElementById('content-container');
@@ -30,7 +30,6 @@ function generatePage() {
 
 }
 	
-	
 // Helper function to make a box
 function makeBox(boxId) {
 	box = document.createElement('div');
@@ -39,17 +38,15 @@ function makeBox(boxId) {
 	return box;
 }
 
-	
 // Sets the colour of an element identifyed by id to a colour
 function setOneColour(idToChange, colourToSet) {
 
 	// This is a super simple function
 	
-	// Find the element to change, using it's ID
-    // Get the ball by searching for it by id 
+	// Find the element to change, using its ID
     var e = document.getElementById(idToChange);
 	
-	// Change it's colour
+	// Change its colour
 	e.style.backgroundColor = colourToSet;
 }
 

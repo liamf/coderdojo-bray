@@ -6,11 +6,10 @@ function setOneColour(idToChange, colourToSet) {
 
 	// This is a super simple function
 	
-	// Find the element to change, using it's ID
-    // Get the ball by searching for it by id 
+	// Find the element to change, using its ID
     var e = document.getElementById(idToChange);
 	
-	// Change it's colour
+	// Change its colour
 	e.style.backgroundColor = colourToSet;
 }
 
@@ -28,6 +27,5 @@ function setColours() {
 	
 	// bottomright, yellow
 	setOneColour('bottomright', '#FFFF00');
-	
 }
 
