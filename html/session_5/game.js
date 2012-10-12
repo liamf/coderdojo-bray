@@ -37,7 +37,7 @@ function generatePage() {
 	rightCol.appendChild(makeBox("box2"));
 	rightCol.appendChild(makeBox("box3"));
 
-	*/
+*/
 	
 	// Find the container element on the page
 	container = document.getElementById('content-container');
@@ -78,26 +78,25 @@ function toggleColourChange() {
 // Sets the colour of an element identifyed by id to a colour
 function setOneColour(idToChange, colourToSet) {
 	
-	// Find the element to change, using it's ID
-    // Get the ball by searching for it by id 
+	// Find the element to change, using its ID
     var e = document.getElementById(idToChange);
     var step=1;
 	
-	// Change it's colour
+	// Change its colour
 	e.style.backgroundColor = colourToSet;
 
-	// Change it's position, too
+	// Change its position, too
 	e.style.position = "relative"; 
 	var delta = 1;
 	var left = e.offsetLeft;
 	
 	if(left>=600)
 	{
-	delta=-600	
+		delta=-600	
 	}
 	else
 	{
-	delta=1
+		delta=1
 	}
 	
 	e.style.left = left + delta + 'px';
