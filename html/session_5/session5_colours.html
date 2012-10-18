@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Basic Layout</title>
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+		<link href="styles_menu.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="colours.js"></script>
+	</head>
+
+	<body>
+	
+	<!-- Here we use a sequence of <div> to contain our page -->	
+	<div id="container">
+	
+		<div id="header">
+			<h1>
+				My Groovy Site
+			</h1>
+		</div>
+		
+		<div id="navigation">
+			<ul>
+				<li><a href='#'>Home</a></li>
+				<li class='submenu'><a href='#'>Products</a>
+					<ul>
+						<li><a href='#'>Product 1</a></li>
+						<li><a href='#'>Product 2</a></li>
+					</ul>
+				</li>
+				<li><a href='#'>About</a></li>
+				<li><a href='#'>Contact</a></li>
+			</ul>
+		</div>
+		
+		<div id="content-container">
+			<div id="content">
+				<h2>
+					Page heading
+				</h2>
+				<p>
+				And some page text
+				</p>
+				<p>
+				And some more text, with picture and links and all sorts, as normal
+				</p>
+				
+			<div id="score">
+			Score: 0
+			</div>
+			
+			</div>
+			
+			<div id="aside">
+				<h3>
+					Aside heading
+				</h3>
+				<p>
+					Some side text 
+					<ul>
+						<li>Maybe a list</li>
+						<li>With things in it</li>
+						<li>Or some links to <a href="http://www.coderdojo.com">sites</a></li>
+					</ul>
+				</p>
+			</div>
+			
+			<div id="footer">
+				Copyright © Me, or my site, 2012
+			</div>	
+		</div>
+	</div>
+		
+	</body>
+	
+</html>
